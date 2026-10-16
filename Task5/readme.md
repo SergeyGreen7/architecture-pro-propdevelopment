@@ -32,7 +32,7 @@ kubectl run admin-back-end-api-app --image=nginx --labels role=admin-back-end-ap
 kubectl apply -f non-admin-api-allow.yaml
 ```
 
-3. Запустить тестовый под с меткой одного из сервисов и обратиться к остальным:
+Запустить тестовый под с меткой одного из сервисов и обратиться к остальным:
 
 ```bash
 kubectl run test-$RANDOM --rm -i -t --image=alpine --labels role=front-end -- sh
